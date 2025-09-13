@@ -1,70 +1,66 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Rent&Go – Car Rental Application
 
-Currently, two official plugins are available:
+Hello! This project is a modern car rental application developed using React and TypeScript. It offers a sleek and functional interface where users can filter cars by brand, model, and year. Explore this project, built with modern web technologies, to provide a fast, reliable, and user-friendly car rental experience! 🌟
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+💡 About the Project
 
-## Expanding the ESLint configuration
+Users can easily find the most suitable car for their needs using various filter options. Dynamic images are generated for each car, and rental fees are calculated using a smart algorithm based on the car’s technical specifications.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Rent&Go is a web application built with React and TypeScript that streamlines and simplifies the car rental process. Users can easily search for cars by brand, model, year, and other filters. Dynamic visuals and pricing calculation features make the user experience more efficient.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+🔍 Key Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Car Search & Filtering: Quickly and easily find cars.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Smart Pricing Calculation: Dynamic pricing based on the car’s technical specifications.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Dynamic Visuals: Custom images for each car.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Mobile Compatibility: Optimal experience on all devices.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-# Typescript_CarRental
+🚀 Technologies Used
+
+⚛️ React – Powerful, secure, and maintainable frontend architecture.
+
+⛑️ TypeScript – Type safety and scalable code.
+
+🎨 Tailwind CSS – Modern and fast UI styling.
+
+🧭 React Router DOM – Seamless page navigation.
+
+📑 React Paginate – Pagination support.
+
+🔽 React Select – Dynamic filtering options.
+
+⚡ Vite – Fast development environment.
+
+🎯 Main Features
+
+✅ Filtering by brand, model, and year
+✅ Paginated car listings
+✅ Dynamic image generation for each car
+✅ Smart pricing based on technical data
+✅ Mobile-friendly and modern design
+
+📂 Notable Project Files
+
+generateImage.ts – Generates images for each car using API parameters. Options like size, angle, and surroundings are dynamically defined.
+
+calcPrice.ts – Automatically calculates daily rental prices based on fuel efficiency, engine size, and environmental impact.
+
+fetchCars.ts – Fetches car data from the API according to user-selected filters and supports pagination.
+
+🔍 Additional Features
+
+Car Search & Filtering: Users can quickly search cars by brand, model, and year.
+
+Dynamic Car Images: Automatic generation of stylish car visuals using API data.
+
+Price Calculation: Calculates daily rental prices based on engine size, fuel consumption, and eco-friendly features.
+
+Performance & Speed: Fast load times and responsive design ensure an excellent user experience.
+
+
+<img width="1861" height="902" alt="Ekran görüntüsü 2025-09-13 221514" src="https://github.com/user-attachments/assets/31ff3c0f-60c2-4042-b77c-bfb63e52cc17" />
